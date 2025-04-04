@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Arte y Fotografía</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galería Global de Arte y Fotografía</h1>
+    <p>Explora paisajes, culturas y momentos capturados alrededor del mundo</p>
+  </header>
+
+  <section>
+    <h2>Galería destacada</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?art,museum" alt="Arte en museo">
+      <img src="https://source.unsplash.com/400x300/?photography,nature" alt="Fotografía de naturaleza">
+      <img src="https://source.unsplash.com/400x300/?urban,art" alt="Arte urbano">
+      <img src="https://source.unsplash.com/400x300/?architecture,photography" alt="Fotografía de arquitectura">
+      <img src="https://source.unsplash.com/400x300/?gallery,exhibition" alt="Exposición artística">
+      <img src="https://source.unsplash.com/400x300/?travel,photo" alt="Fotografía de viajes">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Galería Global. Proyecto educativo con fines demostrativos.
+  </footer>
+</body>
+</html>
