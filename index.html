@@ -9,18 +9,22 @@
       background-color: #fdfdfd;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
-      background-color: #111;
+      background: linear-gradient(to right, #111, #333);
       color: white;
       padding: 20px;
       text-align: center;
     }
     section {
-      padding: 20px;
+      padding: 40px 20px;
     }
     h2 {
       color: #444;
+      margin-bottom: 20px;
+      text-align: center;
     }
     .gallery {
       display: grid;
@@ -32,11 +36,20 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .info {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #333;
     }
     footer {
       background-color: #eee;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
       font-size: 14px;
     }
@@ -60,8 +73,26 @@
     </div>
   </section>
 
+  <section>
+    <h2>Historia de la Fotografía</h2>
+    <div class="info">
+      <p>La fotografía nació a principios del siglo XIX como una forma de capturar momentos y escenas con fidelidad. Desde el daguerrotipo hasta las cámaras digitales y los smartphones, la evolución de esta disciplina ha transformado la manera en que vemos el mundo.</p>
+      <p>Hoy en día, la fotografía es tanto una herramienta artística como documental, utilizada por millones de personas para contar historias, expresar emociones o simplemente compartir lo cotidiano.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Galería Contemporánea</h2>
+    <div class="gallery">
+      <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Arte moderno">
+      <img src="https://images.pexels.com/photos/2896499/pexels-photo-2896499.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ciudad y fotografía">
+      <img src="https://images.pexels.com/photos/2897444/pexels-photo-2897444.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Museo contemporáneo">
+      <img src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Retrato contemporáneo">
+    </div>
+  </section>
+
   <footer>
-    © 2025 Galería Global. Proyecto académico para demostración.
+    © 2025 Galería Global · Proyecto académico sin fines de lucro.
   </footer>
 </body>
 </html>
